@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><h1>Poor Man's Rekognition Demo</h1></center>
+<form action='/add_celeb' method="post" enctype="multipart/form-data">
+    <fieldset>
+    <legend><h2>Add a New Celebrity</h2></legend>
+        Select image to upload (*image should contain only the person of interest):<br>
+        <input type="file" name="image_file" id="image_file"><br><br>
+        Enter celeb name:<br>
+        <input type="text" name="celeb_name" id="celeb_name"><br><br>
+        <input type="submit" value="Upload Image" name="submit">
+    </fieldset>
+</form>
+
+</body>
+</html>

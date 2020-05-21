@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{% if message %}
+<h4>{{message}}</h4>
+{% endif %}
+
+<center><h1>Poor Man's Rekognition Demo</h1></center>
+<form action='/face_recognition' method="post" enctype="multipart/form-data">
+    <fieldset>
+    <legend><h2>Recognize a Celebrity</h2></legend>
+        Select image to upload (*image should contain only the person of interest):<br>
+        <input type="file" name="image_file" id="image_file"><br><br>
+        <input type="submit" value="Upload Image" name="submit">
+    </fieldset>
+</form>
+
+<h3>For demo only following celebrities are supported right now.</h3>
+<ol>
+    <li>Beyonce</li>
+    <li>Donald Trump</li>
+    <li>Leo Messi</li>
+    <li>Justin Bieber</li>
+    <li>Robert Downey Jr</li>
+    <li>Shahrukh Khan</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+### Images uploaded for rekognition and temporary images resides here.
