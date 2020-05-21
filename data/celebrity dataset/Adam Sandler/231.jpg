@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+  <title>Squarespace - Please Stand By</title>
+
+  <script crossorigin="anonymous" src="//static.squarespace.com/universal/scripts-compressed/common-538e1f592abde07429b7-min.js"></script><link rel="stylesheet" type="text/css" href="//static.squarespace.com/universal/styles-compressed/common-f631f0789d1866c649996b5cfedf6616-min.css"/>
+  <script crossorigin="anonymous" src="//static.squarespace.com/universal/scripts-compressed/dialog-1b10f9d4f2001974cf31-min.js"></script><link rel="stylesheet" type="text/css" href="//static.squarespace.com/universal/styles-compressed/dialog-aba41cb3c0853ecd2e2fb2303806d950-min.css"/>
+  <script crossorigin="anonymous" src="//static.squarespace.com/universal/scripts-compressed/system-page-f877f6a8ce325ca16004-min.js"></script><link rel="stylesheet" type="text/css" href="//static.squarespace.com/universal/styles-compressed/system-page-7f3b14cd6e6cfff87288313e18297e9e-min.css"/>
+  
+  <style>
+    .error-key { font-size: 9px; -webkit-user-select: text; padding-top: 20px; color: #555; position: fixed; bottom: 44px; left: 44px; z-index: 9999999999; }
+  </style>
+
+</head>
+<body class="squarespace-config squarespace-system-page">
+
+  <div class="error-key"></div>
+  <div class="minimal-logo">&nbsp;</div>
+
+  <script>
+
+    YUI(YUI_CONFIG).use('squarespace-common', 'squarespace-system-page', function(Y) {
+
+      var report = "Something went wrong.";
+      var errorKey = "D725ELLCYCC4NSTAWT8W";
+
+      if (report) {
+
+        var err = new Y.Squarespace.SystemError(document.location.href, { error: report, errorKey: errorKey }, "html");
+        err.clearable = false;
+        err.show();
+
+      } else {
+
+        Y.one(".error-key").setContent(errorKey);
+
+        var lb = new Y.Squarespace.Lightbox({
+          disableNormalClose: true,
+          clickAnywhereToExit: false,
+          content: '<div class="bigtext" style="width: 500px; height: 130px;"><div class="title">Something Went Wrong!</div><div class="description">Our system has encountered an error.  This exception has been automatically logged and reported.  We will return shortly.</div></div>',
+          margin: 100
+        });
+
+        lb.show();
+        
+      }
+      
+    });
+          
+  </script> 
+
+</body>
+</html>
