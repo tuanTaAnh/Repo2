@@ -1,0 +1,45 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TitleTextViewStyle">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="SectionAuthorDateStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="SectionTextViewStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#4CAF50</item>
+    </style>
+    <style name="TrailTextViewStyle">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:maxLines">6</item>
+        <item name="android:textColor">#102027</item>
+    </style>
+    <style name="AuthorTextViewStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:textColor">#8E24AA</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="DateTextViewStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:textColor">#a4a4a4</item>
+    </style>
+
+</resources>

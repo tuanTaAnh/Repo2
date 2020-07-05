@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">VNEXPRESS NEWS</string>
+    <string name="ic_title_business">Kinh Doanh</string>
+    <string name="ic_title_world">Thế Giới</string>
+    <string name="ic_title_science">Khoa Học</string>
+    <string name="ic_title_sport">Thể Thao</string>
+    <string name="ic_title_environment">Giáo dục</string>
+    <string name="ic_title_society">Xã Hội</string>
+    <string name="ic_title_fashion">Xe</string>
+    <string name="ic_title_culture">Giải trí</string>
+    <string name="ic_title_home">Trang Chủ</string>
+    <string name="verified">Verified</string>
+    <string name="username">User Name</string>
+    <string name="action_settings">Cai Dat</string>
+    <string name="others">Others</string>
+    <string name="ic_title_login">Đăng Nhập</string>
+    <string name="ic_title_signup">Đăng Ký</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
