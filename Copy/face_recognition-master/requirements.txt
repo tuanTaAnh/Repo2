@@ -34,7 +34,7 @@ mock==2.0.0
 nbconvert==5.4.1
 nbformat==4.4.0
 notebook==5.7.4
-numpy==1.16.2
+numpy==1.22.0
 opencv-python==3.3.0.9
 pandocfilters==1.4.2
 parso==0.3.4
